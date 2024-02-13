@@ -42,13 +42,13 @@ def save_to_json(keybindings, output_file):
 
 def main():
     parser = argparse.ArgumentParser(description="Convert JetBrains (Pycharm, Webstorm, etc.) keybinding XML keybindings commands to a VSCode JSON format.")
-    parser.add_argument("translation_json_file", help="Path to the Command Translation file for converting between JetBrains and VSCode commands", default="command_translation_dictionary.json")
-    parser.add_argument("-x", "--xml", "jetbrains_xml_file", help="Path to the target JetBrains keybindings XML file to convert")
+    parser.add_argument("translation_json_file", nargs='?', default="command_translation_dictionary.json", help="Path to the Command Translation file for converting between JetBrains and VSCode commands")
+    parser.add_argument("-x", "--xml", help="Path to the target JetBrains keybindings XML file to convert")
     parser.add_argument("-o", "--output", help="Output file name (default: keybindings.json)", default="keybindings.json")
     args = parser.parse_args()
 
     translation_json_file = args.translation_json_file
-    jetbrains_xml_file = args.jetbrains_xml_file
+    jetbrains_xml_file = args.xml
     vscode_keybindings_file = args.output
 
     if not os.path.exists(translation_json_file):
