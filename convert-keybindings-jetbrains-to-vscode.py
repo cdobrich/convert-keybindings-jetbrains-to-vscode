@@ -41,9 +41,9 @@ def save_to_json(keybindings, output_file):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Convert Jetbrains (Pycharm, Webstorm, etc.) keybinding XML keybindings commands to a VSCode JSON format.")
-    parser.add_argument("translation_json_file", help="Path to the Command Translation file for converting between Jetbrains and VSCode commands")
-    parser.add_argument("jetbrains_xml_file", help="Path to the target Jetbrains keybindings XML file to convert")
+    parser = argparse.ArgumentParser(description="Convert JetBrains (Pycharm, Webstorm, etc.) keybinding XML keybindings commands to a VSCode JSON format.")
+    parser.add_argument("translation_json_file", help="Path to the Command Translation file for converting between JetBrains and VSCode commands", default="command_translation_dictionary.json")
+    parser.add_argument("-x", "--xml", "jetbrains_xml_file", help="Path to the target JetBrains keybindings XML file to convert")
     parser.add_argument("-o", "--output", help="Output file name (default: keybindings.json)", default="keybindings.json")
     args = parser.parse_args()
 
@@ -56,12 +56,12 @@ def main():
         sys.exit(1)
 
     if not os.path.exists(jetbrains_xml_file):
-        print(f"Jetbrains XML file '{jetbrains_xml_file}' does not exist.")
+        print(f"JetBrains XML file '{jetbrains_xml_file}' does not exist.")
         sys.exit(1)
 
     translation_dict = {}
 
-    # Create a searchable dictionary with strings input for both VSCode and Jetbrains commands as keys.
+    # Create a searchable dictionary with strings input for both VSCode and JetBrains commands as keys.
     with open(translation_json_file, 'r') as f:
         translation_list = json.load(f)
         for item in translation_list:
@@ -73,7 +73,7 @@ def main():
 
     translated_commands = []
 
-    # Convert Jetbrains format to VSCode format
+    # Convert JetBrains format to VSCode format
     for command_data in jetbrains_data:
         command = command_data.get("command")
         translation_unit = translation_dict.get(command)
@@ -88,7 +88,7 @@ def main():
             translated_commands.append(translated_command)
 
     # TODO / FIXME: Account for multiple key-bindings for the same command.
-    # TODO / FIXME: Include any 'args' when converting out of VSCode format to Jetbrains? At least note the assumption.
+    # TODO / FIXME: Include any 'args' when converting out of VSCode format to JetBrains? At least note the assumption.
 
     save_to_json(translated_commands, vscode_keybindings_file)
     print("Conversion complete. Output saved to", vscode_keybindings_file)

@@ -1,6 +1,40 @@
-# Convert keybinding from Jetbrains Products to VSCode
+# Convert keybinding from JetBrains Products to VSCode
 
-Convert keybindings from Jetbrains products (PyCharm, Webstorm, etc.) to VSCode.
+Convert keybindings from JetBrains products (PyCharm, Webstorm, etc.) to VSCode.
+
+# How to Use
+
+TBD
+
+## Where to Get Your Current JetBrains Product (PyCharm, Webstorm, etc.) keybindings file
+
+The precise location will depend on the product AND the version number.
+
+### MacOS
+
+Syntax: ```~/Library/Application Support/JetBrains/<product><version>/keymaps/```
+
+#### Example filepaths
+
+    ~/Library/Application\ Support/JetBrains/WebStorm2021.3/keymaps/SomeKeybingingName.xml
+
+### Linux
+
+Syntax: ```~/.config/JetBrains/<product><version>/keymaps/```
+
+#### Example filepaths
+
+    "~/.config/JetBrains/IntelliJIdea2021.3/keymaps/Windows-like for macOS.xml"
+    ~/.config/JetBrains/IntelliJIdea2021.3/keymaps/SomeKeybingingName.xml
+
+### Linux (on flatpak)
+
+Syntax: ```~/.var/app/com.jetbrains.PyCharm-Community/config/JetBrains/<product><version>/keymaps/```
+
+#### Example filepaths
+
+    ~/.var/app/com.jetbrains.PyCharm-Community/config/JetBrains/PyCharmCE2023.1/keymaps/SomeKeybingingName.xml
+
 
 # Installing the Generated File
 
