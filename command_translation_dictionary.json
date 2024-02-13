@@ -1,0 +1,561 @@
+[
+  {
+    "vscode_key": "workbench.action.navigateBack",
+    "vscode_command": "workbench.action.navigateBack",
+    "vscode_when": "canNavigateBack",
+    "jetbrains_key": "ctrl meta left",
+    "jetbrains_command": "Back",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+-",
+    "vscode_command": "workbench.action.navigateForward",
+    "vscode_when": "canNavigateForward",
+    "jetbrains_key": "ctrl meta right",
+    "jetbrains_command": "Forward",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+c",
+    "vscode_command": "keybindings.editor.copyKeybindingEntry",
+    "vscode_when": "inKeybindings && keybindingFocus && !whenFocus",
+    "jetbrains_key": "ctrl c",
+    "jetbrains_command": "$Copy",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+x",
+    "vscode_command": "editor.action.clipboardCutAction",
+    "jetbrains_key": "ctrl x",
+    "jetbrains_command": "$Cut",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "delete",
+    "vscode_command": "deleteRight",
+    "vscode_when": "textInputFocus",
+    "jetbrains_key": "delete",
+    "jetbrains_command": "$Delete",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+a",
+    "vscode_command": "editor.action.selectAll",
+    "jetbrains_key": "ctrl a",
+    "jetbrains_command": "$SelectAll",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+v",
+    "vscode_command": "editor.action.clipboardPasteAction",
+    "jetbrains_key": "ctrl v",
+    "jetbrains_command": "$Paste",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+z",
+    "vscode_command": "redo",
+    "jetbrains_key": "shift ctrl z",
+    "jetbrains_command": "$Redo",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+z",
+    "vscode_command": "undo",
+    "jetbrains_key": "ctrl z",
+    "jetbrains_command": "$Undo",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift+alt+h",
+    "vscode_command": "editor.showCallHierarchy",
+    "vscode_when": "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor",
+    "jetbrains_key": "ctrl meta h",
+    "jetbrains_command": "CallHierarchy",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+space",
+    "vscode_command": "editor.action.triggerSuggest",
+    "vscode_when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible",
+    "jetbrains_key": "ctrl space",
+    "jetbrains_command": "ChangesView.SetDefault",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+numpad_subtract",
+    "vscode_command": "editor.fold",
+    "vscode_when": "editorFocus && foldingEnabled",
+    "jetbrains_key": "ctrl subtract",
+    "jetbrains_command": "CollapseRegion",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+0",
+    "vscode_command": "editor.foldAll",
+    "vscode_when": "editorTextFocus && foldingEnabled",
+    "jetbrains_key": "shift ctrl subtract",
+    "jetbrains_command": "CollapseAllRegions",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift+f9",
+    "vscode_command": "workbench.action.debug.run",
+    "vscode_when": "debuggersAvailable && !inDebugMode && !terminalFocus",
+    "jetbrains_key": "shift f9",
+    "jetbrains_command": "Debug",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "f5",
+    "vscode_command": "workbench.action.debug.start",
+    "vscode_when": "debuggersAvailable && debugState == 'inactive'",
+    "jetbrains_key": "shift f9",
+    "jetbrains_command": "Debug",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "f9",
+    "vscode_command": "workbench.action.debug.continue",
+    "vscode_when": "inDebugMode",
+    "jetbrains_key": "f9",
+    "jetbrains_command": "Resume",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+f5",
+    "vscode_command": "workbench.action.debug.restart",
+    "vscode_when": "inDebugMode",
+    "jetbrains_key": "ctrl f5",
+    "jetbrains_command": "Rerun",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+j",
+    "vscode_command": "workbench.action.togglePanel",
+    "jetbrains_key": "ctrl back_quote",
+    "jetbrains_command": "ActivateTerminalToolWindow",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+`",
+    "vscode_command": "workbench.action.terminal.new",
+    "vscode_when": "terminalProcessSupported || terminalWebExtensionContributedProfile",
+    "jetbrains_command": "ActivateTerminalToolWindow",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+c",
+    "vscode_command": "workbench.action.terminal.openNativeConsole",
+    "vscode_when": "!terminalFocus",
+    "jetbrains_key": "ctrl back_quote",
+    "jetbrains_command": "ActivateTerminalToolWindow",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+j",
+    "vscode_command": "editor.action.joinLines",
+    "vscode_when": "editorTextFocus && !editorReadonly",
+    "jetbrains_key": "shift ctrl j",
+    "jetbrains_command": "EditorJoinLines",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+end",
+    "vscode_command": "cursorBottomSelect",
+    "vscode_when": "textInputFocus"
+  },
+  {
+    "vscode_key": "ctrl+k z",
+    "vscode_command": "workbench.action.toggleZenMode",
+    "vscode_when": "!isAuxiliaryWindowFocusedContext",
+    "jetbrains_key": "ctrl h",
+    "jetbrains_command": "HideAllWindows",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+b",
+    "vscode_command": "workbench.action.toggleSidebarVisibility",
+    "jetbrains_key": "meta b",
+    "jetbrains_command": "HideSideWindows",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+q",
+    "vscode_command": "workbench.action.quit",
+    "jetbrains_key": "meta q",
+    "jetbrains_command": "Exit",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+j",
+    "vscode_command": "editor.unfoldAll",
+    "vscode_when": "editorTextFocus && foldingEnabled",
+    "jetbrains_key": "ctrl add",
+    "jetbrains_command": "ExpandAll",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+1",
+    "vscode_command": "editor.foldLevel1",
+    "vscode_when": "editorTextFocus && foldingEnabled",
+    "jetbrains_key": "shift ctrl multiply",
+    "jetbrains_command": "ExpandToLevel1",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+2",
+    "vscode_command": "editor.foldLevel2",
+    "vscode_when": "editorTextFocus && foldingEnabled",
+    "jetbrains_key": "shift ctrl multiply",
+    "jetbrains_command": "ExpandAllToLevel2",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+3",
+    "vscode_command": "editor.foldLevel3",
+    "vscode_when": "editorTextFocus && foldingEnabled",
+    "jetbrains_key": "shift ctrl multiply",
+    "jetbrains_command": "ExpandAllToLevel3",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+4",
+    "vscode_command": "editor.foldLevel4",
+    "vscode_when": "editorTextFocus && foldingEnabled",
+    "jetbrains_key": "shift ctrl multiply",
+    "jetbrains_command": "ExpandAllToLevel4",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+5",
+    "vscode_command": "editor.foldLevel5",
+    "vscode_when": "editorTextFocus && foldingEnabled",
+    "jetbrains_key": "shift ctrl multiply",
+    "jetbrains_command": "ExpandAllToLevel5",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+alt+m",
+    "vscode_command": "editor.action.codeAction",
+    "vscode_when": "editorTextFocus",
+    "args": {
+      "kind": "refactor.extract.function",
+      "apply": "ifSingle"
+    },
+    "jetbrains_key": "ctrl meta m",
+    "jetbrains_command": "ExtractMethod",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+f12",
+    "vscode_command": "editor.action.peekImplementation",
+    "vscode_when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor",
+    "jetbrains_key": "meta f7",
+    "jetbrains_command": "FindUsages",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+f3",
+    "vscode_command": "editor.action.nextSelectionMatchFindAction",
+    "vscode_when": "editorFocus",
+    "jetbrains_key": "ctrl f3",
+    "jetbrains_command": "FindWordAtCaret",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "alt+f9",
+    "vscode_command": "editor.debug.action.runToCursor",
+    "vscode_when": "debugState == 'stopped'",
+    "jetbrains_key": "meta f9",
+    "jetbrains_command": "RunToCursor",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "f7",
+    "vscode_command": "workbench.action.debug.stepInto",
+    "vscode_when": "debugState != 'inactive'",
+    "jetbrains_key": "shift meta f7",
+    "jetbrains_command": "ForceStepInto",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "f8",
+    "vscode_command": "workbench.action.debug.stepOver",
+    "vscode_when": "debugState == 'stopped'",
+    "jetbrains_key": "f8",
+    "jetbrains_command": "StepOver",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+f11",
+    "vscode_command": "workbench.action.debug.stepIntoTarget",
+    "vscode_when": "inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'",
+    "jetbrains_key": "shift f7",
+    "jetbrains_command": "SmartStepInto",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+f11",
+    "vscode_command": "workbench.action.debug.stepIntoTarget",
+    "vscode_when": "inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'",
+    "jetbrains_key": "f7",
+    "jetbrains_command": "StepInto",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift+f11",
+    "vscode_command": "workbench.action.debug.stepOut",
+    "vscode_when": "debugState == 'stopped'",
+    "jetbrains_key": "shift f8",
+    "jetbrains_command": "StepOut",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift+f5",
+    "vscode_command": "workbench.action.debug.stop",
+    "vscode_when": "inDebugMode && !focusedSessionIsAttach",
+    "jetbrains_key": "ctrl f2",
+    "jetbrains_command": "Stop",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+alt+b",
+    "vscode_command": "editor.action.goToImplementation",
+    "vscode_when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor",
+    "jetbrains_key": "ctrl meta b",
+    "jetbrains_command": "GotoImplementation",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+g",
+    "vscode_command": "workbench.action.gotoLine",
+    "jetbrains_key": "ctrl g",
+    "jetbrains_command": "GotoLine",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+e",
+    "vscode_command": "-workbench.action.openRecent",
+    "jetbrains_key": "ctrl e",
+    "jetbrains_command": "RecentFiles",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+b",
+    "vscode_command": "editor.action.goToDeclaration",
+    "vscode_when": "editorTextFocus",
+    "jetbrains_key": "ctrl b",
+    "jetbrains_command": "GotoDeclaration",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+b",
+    "vscode_command": "editor.action.goToTypeDefinition",
+    "vscode_when": "editorHasTypeDefinitionProvider && editorTextFocus && !isInEmbeddedEditor",
+    "jetbrains_key": "shift ctrl b",
+    "jetbrains_command": "GotoTypeDeclaration",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+u",
+    "vscode_command": "dart.goToSuper",
+    "vscode_when": "editorTextFocus && editorLangId == 'dart'",
+    "jetbrains_key": "ctrl u",
+    "jetbrains_command": "GotoSuperMethod",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+f1",
+    "vscode_command": "workbench.action.showErrorsWarnings",
+    "vscode_when": "editorTextFocus",
+    "jetbrains_key": "meta 6",
+    "jetbrains_command": "ActivateProblemsViewToolWindow",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift shift",
+    "vscode_command": "workbench.action.quickOpen"
+  },
+  {
+    "vscode_key": "ctrl+shift+o",
+    "vscode_command": "workbench.action.gotoSymbol",
+    "vscode_when": "!accessibilityHelpIsShown && !accessibleViewIsShown",
+    "jetbrains_key": "shift ctrl meta n",
+    "jetbrains_command": "GotoSymbol",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+o",
+    "vscode_command": "editor.action.accessibleViewGoToSymbol",
+    "vscode_when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown",
+    "jetbrains_key": "shift ctrl meta n",
+    "jetbrains_command": "GotoSymbol",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "alt+down",
+    "vscode_command": "editor.action.moveLinesDownAction",
+    "vscode_when": "editorTextFocus && !editorReadonly",
+    "jetbrains_key": "alt down",
+    "jetbrains_command": "MoveLineDown",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "alt+up",
+    "vscode_command": "editor.action.moveLinesUpAction",
+    "vscode_when": "editorTextFocus && !editorReadonly",
+    "jetbrains_key": "alt up",
+    "jetbrains_command": "MoveLineUp",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift+alt+down",
+    "vscode_command": "editor.action.moveLinesDownAction",
+    "vscode_when": "editorTextFocus && !editorReadonly",
+    "jetbrains_key": "shift ctrl down",
+    "jetbrains_command": "MoveStatementDown",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift+alt+up",
+    "vscode_command": "editor.action.moveLinesUpAction",
+    "vscode_when": "editorTextFocus && !editorReadonly",
+    "jetbrains_key": "shift ctrl up",
+    "jetbrains_command": "MoveStatementUp",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "f7",
+    "vscode_command": "editor.action.accessibleDiffViewer.next",
+    "vscode_when": "isInDiffEditor",
+    "jetbrains_key": "f7",
+    "jetbrains_command": "NextDiff",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "shift+f7",
+    "vscode_command": "editor.action.accessibleDiffViewer.prev",
+    "vscode_when": "isInDiffEditor",
+    "jetbrains_key": "shift f7",
+    "jetbrains_command": "PreviousDiff",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+\\",
+    "vscode_command": "workbench.action.splitEditorRight",
+    "jetbrains_key": "shift enter",
+    "jetbrains_command": "OpenInRightSplit",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+\\",
+    "vscode_command": "workbench.action.splitEditor",
+    "jetbrains_key": "ctrl back_slash",
+    "jetbrains_command": "SplitVertically",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+alt+o",
+    "vscode_command": "editor.action.organizeImports",
+    "vscode_when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/",
+    "jetbrains_key": "ctrl meta o",
+    "jetbrains_command": "OptimizeImports",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+o",
+    "vscode_command": "editor.action.codeAction",
+    "vscode_when": "editorTextFocus && javaLSReady && editorLangId == 'java'",
+    "args": {
+      "kind": "source.overrideMethods"
+    },
+    "jetbrains_key": "ctrl o",
+    "jetbrains_command": "OverrideMethods",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+.",
+    "vscode_command": "problems.action.showQuickFixes",
+    "vscode_when": "problemFocus",
+    "jetbrains_key": "meta enter",
+    "jetbrains_command": "ProblemsView.QuickFixes",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+.",
+    "vscode_command": "workbench.action.terminal.showQuickFixes",
+    "vscode_when": "terminalFocus",
+    "jetbrains_key": "meta enter",
+    "jetbrains_command": "ProblemsView.QuickFixes",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+i",
+    "vscode_command": "editor.action.formatDocument",
+    "vscode_when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor",
+    "jetbrains_key": "ctrl meta l",
+    "jetbrains_command": "ReformatCode",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+i",
+    "vscode_command": "editor.action.formatDocument.none",
+    "vscode_when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly",
+    "jetbrains_key": "ctrl meta l",
+    "jetbrains_command": "ReformatCode",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+k ctrl+f",
+    "vscode_command": "editor.action.formatSelection",
+    "vscode_when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly",
+    "jetbrains_key": "ctrl meta l",
+    "jetbrains_command": "ReformatCode",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+t",
+    "vscode_command": "workbench.action.reopenClosedEditor",
+    "jetbrains_key": "shift meta t",
+    "jetbrains_command": "ReopenClosedTab",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+h",
+    "vscode_command": "editor.action.startFindReplaceAction",
+    "vscode_when": "editorFocus || editorIsOpen",
+    "jetbrains_key": "ctrl r",
+    "jetbrains_command": "Replace",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+h",
+    "vscode_command": "workbench.action.replaceInFiles",
+    "jetbrains_key": "shift ctrl f",
+    "jetbrains_command": "FindInPath",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+; l",
+    "vscode_command": "testing.reRunLastRun",
+    "jetbrains_key": "shift meta r",
+    "jetbrains_command": "RerunTests",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+shift+l",
+    "vscode_command": "selectAllSearchEditorMatches",
+    "vscode_when": "inSearchEditor",
+    "jetbrains_key": "shift ctrl meta j",
+    "jetbrains_command": "SelectAllOccurrences",
+    "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+,",
+    "vscode_command": "workbench.action.openSettings",
+    "jetbrains_key": "meta comma",
+    "jetbrains_command": "ShowSettings",
+    "jetbrains_when": "editorTextFocus"
+  }
+]
