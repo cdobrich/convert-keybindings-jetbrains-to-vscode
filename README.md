@@ -42,15 +42,15 @@ Copy the output file (default filename is keybindings.json) to the user configur
 
 ## MacOS
 
-~/Library/Application\ Support/Code/User/keybindings.json
+    ~/Library/Application\ Support/Code/User/keybindings.json
 
 ## Linux
 
-~/.config/Code/User/keybindings.json
+    ~/.config/Code/User/keybindings.json
 
 ## Windows
 
-%APPDATA%\Code\User\keybindings.json
+    %APPDATA%\Code\User\keybindings.json
 
 
 # Limitations
