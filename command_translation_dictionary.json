@@ -557,5 +557,15 @@
     "jetbrains_key": "meta comma",
     "jetbrains_command": "ShowSettings",
     "jetbrains_when": "editorTextFocus"
-  }
+  },
+	{
+		"vscode_key": "ctrl+tab",
+		"vscode_command": "workbench.action.nextEditor",
+    "jetbrains_key": "ctrl tab"
+	},
+	{
+		"vscode_key": "ctrl+shift+tab",
+		"vscode_command": "workbench.action.previousEditor",
+    "jetbrains_key": "ctrl shift tab"
+	}
 ]
