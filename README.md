@@ -1,6 +1,6 @@
 # Convert keybinding from JetBrains Products to VSCode
 
-Convert keybindings from JetBrains products (PyCharm, Webstorm, etc.) to VSCode.
+Convert keybindings from JetBrains products (PyCharm, Webstorm, RustRover, etc.) to VSCode.
 
 # How to Use
 
@@ -66,7 +66,7 @@ Copy the output file (default filename is keybindings.json) to the user configur
 
 ## Multiple keys for the same command
 
-This feature is currently in work. It is not difficult and should be added soon.
+This feature is currently in work.
 
 ## Command Translation Dictionary Incomplete
 
