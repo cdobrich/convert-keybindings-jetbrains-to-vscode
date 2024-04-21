@@ -4,7 +4,14 @@ Convert keybindings from JetBrains products (PyCharm, Webstorm, etc.) to VSCode.
 
 # How to Use
 
-TBD
+The _command_translation_dictionary_ is a set of translation data in JSON format. It is provided with this program, mapping what the developer has determined translates between the two program environments. This is the first argument passed to the program. (This file can also be substituted by users.)
+
+Users may supply their own _Jetbrain's XML_ file. This is provided by using the '-x' or '--xml' command line switch.
+
+Example command:
+```
+convert-keybindings-jetbrains-to-vscode.py command_translation_dictionary.json --xml jetbrains_keybindings_example.xml --output my_output.json
+```
 
 ## Where to Get Your Current JetBrains Product (PyCharm, Webstorm, etc.) keybindings file
 

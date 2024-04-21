@@ -599,6 +599,5 @@
     "jetbrains_command": "PreviousTab",
     "jetbrains_key": "shift meta open_bracket",
     "jetbrains_when": "editorTextFocus"
-  },
-
+  }
 ]

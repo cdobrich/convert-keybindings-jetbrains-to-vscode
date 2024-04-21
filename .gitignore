@@ -58,7 +58,6 @@ pip-delete-this-directory.txt
 
 # Maven
 target/
-dist/
 
 # MacOS crap
 .DS_Store
@@ -100,7 +99,7 @@ cover/
 .hypothesis/
 .pytest_cache/
 TEST*.xml
-tests/
+data/
 
 # Translations
 *.mo
