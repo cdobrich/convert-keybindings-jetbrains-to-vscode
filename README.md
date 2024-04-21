@@ -8,6 +8,8 @@ The _command_translation_dictionary_ is a set of translation data in JSON format
 
 Users may supply their own _Jetbrain's XML_ file. This is provided by using the '-x' or '--xml' command line switch.
 
+The default output uses the name 'keybindings.json'.
+
 Example command:
 ```
 convert-keybindings-jetbrains-to-vscode.py command_translation_dictionary.json --xml jetbrains_keybindings_example.xml --output my_output.json
