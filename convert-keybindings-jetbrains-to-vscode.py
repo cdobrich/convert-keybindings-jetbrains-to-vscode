@@ -1,3 +1,4 @@
+#!/user/bin/python3
 import argparse
 
 import sys
@@ -54,6 +55,8 @@ def main():
     translation_json_file = args.translation_json_file
     jetbrains_xml_file = args.xml
     vscode_keybindings_file = args.output
+
+    # TODO / FIXME: More testing necessary to make sure this can be executed outside of the IDE environment.
 
     if not os.path.exists(translation_json_file):
         print(f"Translation JSON file '{translation_json_file}' does not exist.")

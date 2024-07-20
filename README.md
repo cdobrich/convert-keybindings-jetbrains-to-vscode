@@ -12,7 +12,7 @@ The default output uses the name 'keybindings.json'.
 
 Example command:
 ```
-convert-keybindings-jetbrains-to-vscode.py command_translation_dictionary.json --xml jetbrains_keybindings_example.xml --output my_output.json
+convert-keybindings-jetbrains-to-vscode.py command_translation_dictionary.json --xml data/jetbrains_keybindings_example.xml --output my_output.json
 ```
 
 ## Where to Get Your Current JetBrains Product (PyCharm, Webstorm, etc.) keybindings file
@@ -33,6 +33,7 @@ Syntax: ```~/.config/JetBrains/<product><version>/keymaps/```
 
 #### Example filepaths
 
+    "~/.config/JetBrains/PyCharmCE2024.1/keymaps/Windows-like for macOS.xml"
     "~/.config/JetBrains/IntelliJIdea2021.3/keymaps/Windows-like for macOS.xml"
     ~/.config/JetBrains/IntelliJIdea2021.3/keymaps/SomeKeybingingName.xml
 
@@ -67,6 +68,8 @@ Copy the output file (default filename is keybindings.json) to the user configur
 ## Multiple keys for the same command
 
 This feature is currently in work.
+
+For example, currently only `Ctrl+UpPg` or `Ctrl+DownPg` work to switch tabs. Ideally we want to include support for `Ctrl+Tab`. 
 
 ## Command Translation Dictionary Incomplete
 
