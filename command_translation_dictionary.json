@@ -558,19 +558,18 @@
     "jetbrains_command": "ShowSettings",
     "jetbrains_when": "editorTextFocus"
   },
-	{
-		"vscode_key": "ctrl+tab",
-		"vscode_command": "workbench.action.nextEditor",
+  {
+	"vscode_key": "ctrl+tab",
+    "vscode_command": "workbench.action.nextEditor",
     "jetbrains_command": "NextTab",
     "jetbrains_key": "ctrl tab"
-	},
-	{
-		"vscode_key": "ctrl+shift+tab",
-		"vscode_command": "workbench.action.previousEditor",
+  },
+  {
+    "vscode_key": "ctrl+shift+tab",
+    "vscode_command": "workbench.action.previousEditor",
     "jetbrains_command": "PreviousTab",
     "jetbrains_key": "ctrl shift tab"
-	},
-
+  },
   {
     "vscode_key": "ctrl+[PageDown]",
     "vscode_command": "workbench.action.nextEditor",
@@ -585,10 +584,9 @@
     "jetbrains_key": "ctrl page_up",
     "jetbrains_when": "editorTextFocus"
   },
-
   {
-		"vscode_key": "shift+ctrl+[BracketRight]",
-		"vscode_command": "workbench.action.nextEditor",
+	"vscode_key": "shift+ctrl+[BracketRight]",
+	"vscode_command": "workbench.action.nextEditor",
     "jetbrains_command": "NextTab",
     "jetbrains_key": "shift meta close_bracket",
     "jetbrains_when": "editorTextFocus"
@@ -599,5 +597,23 @@
     "jetbrains_command": "PreviousTab",
     "jetbrains_key": "shift meta open_bracket",
     "jetbrains_when": "editorTextFocus"
+  },
+  {
+    "vscode_key": "ctrl+w",
+    "vscode_command": "workbench.action.closeActiveEditor",
+    "jetbrains_command": "CloseContent",
+    "jetbrains_key": "ctrl w"
+  },
+  {
+    "vscode_key": "ctrl+f4",
+    "vscode_command": "workbench.action.closeActiveEditor",
+    "jetbrains_command": "CloseContent",
+    "jetbrains_key": "ctrl f4"
+  },
+  {
+    "vscode_key": "meta+w",
+    "vscode_command": "workbench.action.closeActiveEditor",
+    "jetbrains_command": "CloseContent",
+    "jetbrains_key": "meta w"
   }
 ]

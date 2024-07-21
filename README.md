@@ -62,14 +62,17 @@ Copy the output file (default filename is keybindings.json) to the user configur
 
     %APPDATA%\Code\User\keybindings.json
 
-
 # Limitations
 
 ## Multiple keys for the same command
 
-This feature is currently in work.
+This is only partially working? 
 
-For example, currently only `Ctrl+UpPg` or `Ctrl+DownPg` work to switch tabs. Ideally we want to include support for `Ctrl+Tab`. 
+For example, currently only `Ctrl+UpPg` or `Ctrl+DownPg` work to switch tabs. Ideally we want to include support for `Ctrl+Tab`.
+
+# TODO
+
+See the [TODO.md](TODO.md) file for roadmap data.
 
 ## Command Translation Dictionary Incomplete
 
