@@ -2,6 +2,25 @@
 
 List of features, with notes, needing to be worked on.
 
+## Editor Font Increase Size, Decrease Size, Reset
+
+The translation output for the following section does not seem to generate correctly. The conversion code does not match the expected output.
+
+It should match the following. This sample is output when done through the VSCode GUI:
+
+    {
+        "key": "alt+numpad_subtract",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "alt+numpad_add",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "alt+=",
+        "command": "editor.action.fontZoomReset"
+    },
+
 ## Close Active Window (multiple keys)
 
 This does not appear to be working for the CloseContent feature. Example:

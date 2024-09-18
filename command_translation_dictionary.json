@@ -623,13 +623,13 @@
     "jetbrains_key": "alt subtract"
   },
   {
-    "vscode_key": "alt+numpad_subtract",
+    "vscode_key": "alt+numpad_add",
     "vscode_command": "editor.action.fontZoomIn",
     "jetbrains_command": "EditorIncreaseFontSize",
     "jetbrains_key": "alt add"
   },
   {
-    "vscode_key": "alt+equals",
+    "vscode_key": "alt+=",
     "vscode_command": "editor.action.fontZoomReset",
     "jetbrains_command": "EditorResetFontSize",
     "jetbrains_key": "alt equals"
