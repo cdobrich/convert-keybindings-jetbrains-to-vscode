@@ -615,5 +615,23 @@
     "vscode_command": "workbench.action.closeActiveEditor",
     "jetbrains_command": "CloseContent",
     "jetbrains_key": "meta w"
+  },
+  {
+    "vscode_key": "",
+    "vscode_command": "editor.action.fontZoomOut",
+    "jetbrains_command": "EditorDecreaseFontSize",
+    "jetbrains_key": "alt subtract"
+  },
+  {
+    "vscode_key": "",
+    "vscode_command": "editor.action.fontZoomIn",
+    "jetbrains_command": "EditorIncreaseFontSize",
+    "jetbrains_key": "alt add"
+  },
+  {
+    "vscode_key": "",
+    "vscode_command": "editor.action.fontZoomReset",
+    "jetbrains_command": "EditorResetFontSize",
+    "jetbrains_key": "alt equals"
   }
 ]

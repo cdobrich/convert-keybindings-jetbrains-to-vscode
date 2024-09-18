@@ -25,3 +25,7 @@ Currently, this seems to shift to Zen-Mode, not hide the panel.
                                      "when": "explorerViewletFocus" },
     { "key": "alt+numpad1",           "command": "workbench.action.toggleSidebarVisibility",
                                      "when": "explorerViewletFocus" },
+
+## Re-usable Data for Regression Testing
+
+TBD, WIP.
