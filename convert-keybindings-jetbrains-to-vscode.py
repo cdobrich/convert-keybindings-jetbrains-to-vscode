@@ -12,6 +12,11 @@ def xml_to_dict(xml_file):
     Used for internal memory processing and compatibility support of XMl files.
     :param xml_file:
     :return: A dictionary representing the XML data.
+
+    FIXME: The dictionary is storing unique items based on their action_id. If the keystroke has multiple definitions, this will be overwritten.
+            The solution is to allow for multiple keys. Possibly including a counter when storing the dictionaries, indicating how many keys match
+            the action_id. Then adjust the translation code.
+
     """
     keybindings = {}
     tree = ET.parse(xml_file)
@@ -26,6 +31,12 @@ def xml_to_dict(xml_file):
 
 
 def convert_to_vscode_format(pycharm_keybindings):
+    """
+    FIXME: Storing the "when": "editorTextFocus" may not always be appropriate, and we are writing it for every entry.
+            Solution is to adjust the ingesting of the command translation matrix, and only use those entries when appropriate?
+            This will require testing to make sure some entries do not expect this value, but we have not recorded this into
+            the command_translation file.
+    """
     vscode_keybindings = []
     for action_id, shortcut_value in pycharm_keybindings.items():
         vscode_keybindings.append({

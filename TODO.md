@@ -4,6 +4,8 @@ List of features, with notes, needing to be worked on.
 
 ## Editor Font Increase Size, Decrease Size, Reset
 
+UPDATE: This may have to do with the automatic copying of the "when": "editorTextFocus". See #FIXME notes for this error as well.
+
 The translation output for the following section does not seem to generate correctly. The conversion code does not match the expected output.
 
 It should match the following. This sample is output when done through the VSCode GUI:
@@ -22,6 +24,8 @@ It should match the following. This sample is output when done through the VSCod
     },
 
 ## Close Active Window (multiple keys)
+
+UPDATE: The error for this translation has been discovered and noted with 'FIXME' in the code, including solution suggestions.
 
 This does not appear to be working for the CloseContent feature. Example:
 
