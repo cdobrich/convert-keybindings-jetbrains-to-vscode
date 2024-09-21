@@ -559,7 +559,7 @@
     "jetbrains_when": "editorTextFocus"
   },
   {
-	"vscode_key": "ctrl+tab",
+		"vscode_key": "ctrl+tab",
     "vscode_command": "workbench.action.nextEditor",
     "jetbrains_command": "NextTab",
     "jetbrains_key": "ctrl tab"
@@ -585,8 +585,8 @@
     "jetbrains_when": "editorTextFocus"
   },
   {
-	"vscode_key": "shift+ctrl+[BracketRight]",
-	"vscode_command": "workbench.action.nextEditor",
+		"vscode_key": "shift+ctrl+[BracketRight]",
+		"vscode_command": "workbench.action.nextEditor",
     "jetbrains_command": "NextTab",
     "jetbrains_key": "shift meta close_bracket",
     "jetbrains_when": "editorTextFocus"
