@@ -633,5 +633,11 @@
     "vscode_command": "editor.action.fontZoomReset",
     "jetbrains_command": "EditorResetFontSize",
     "jetbrains_key": "alt equals"
+  },
+  {
+    "vscode_key": "f2",
+    "vscode_command": "editor.action.rename",
+    "jetbrains_command": "RenameElement",
+    "jetbrains_key": "shift f6"
   }
 ]
