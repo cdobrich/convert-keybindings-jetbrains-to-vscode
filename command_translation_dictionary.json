@@ -491,23 +491,23 @@
     "jetbrains_when": "editorTextFocus"
   },
   {
-    "vscode_key": "ctrl+shift+i",
+    "vscode_key": "ctrl+shift+meta+l",
     "vscode_command": "editor.action.formatDocument",
     "vscode_when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor",
-    "jetbrains_key": "ctrl meta l",
-    "jetbrains_command": "ReformatCode",
+    "jetbrains_key": "ctrl shift meta l",
+    "jetbrains_command": "ShowReformatFileDialog",
     "jetbrains_when": "editorTextFocus"
   },
   {
-    "vscode_key": "ctrl+shift+i",
+    "vscode_key": "ctrl+shift+meta+l",
     "vscode_command": "editor.action.formatDocument.none",
     "vscode_when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly",
-    "jetbrains_key": "ctrl meta l",
-    "jetbrains_command": "ReformatCode",
+    "jetbrains_key": "ctrl shift meta l",
+    "jetbrains_command": "ShowReformatFileDialog",
     "jetbrains_when": "editorTextFocus"
   },
   {
-    "vscode_key": "ctrl+k ctrl+f",
+    "vscode_key": "ctrl++meta+l",
     "vscode_command": "editor.action.formatSelection",
     "vscode_when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly",
     "jetbrains_key": "ctrl meta l",
