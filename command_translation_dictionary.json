@@ -507,7 +507,7 @@
     "jetbrains_when": "editorTextFocus"
   },
   {
-    "vscode_key": "ctrl++meta+l",
+    "vscode_key": "ctrl+meta+l",
     "vscode_command": "editor.action.formatSelection",
     "vscode_when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly",
     "jetbrains_key": "ctrl meta l",
