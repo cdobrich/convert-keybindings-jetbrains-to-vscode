@@ -68,9 +68,9 @@ There is a shellscript `install-keybindings-to-vscode-on-linux.sh` which will co
 
 ## Multiple keys for the same command
 
-This is only partially working? 
+A bug has been identified and a solution proposed. 
 
-For example, currently only `Ctrl+UpPg` or `Ctrl+DownPg` work to switch tabs. Ideally we want to include support for `Ctrl+Tab`.
+FIXME: For example, currently only `Ctrl+UpPg` or `Ctrl+DownPg` work to switch tabs. Ideally we want to include support for `Ctrl+Tab`.
 
 # TODO
 
