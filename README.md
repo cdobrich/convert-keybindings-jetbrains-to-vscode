@@ -58,6 +58,8 @@ Copy the output file (default filename is keybindings.json) to the user configur
 
     ~/.config/Code/User/keybindings.json
 
+There is a shellscript `install-keybindings-to-vscode-on-linux.sh` which will copy the default output `keybindings.json` to the default VSCode installation location on Linux. Close VSCode before running this shellscript.
+
 ## Windows
 
     %APPDATA%\Code\User\keybindings.json
