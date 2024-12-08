@@ -639,5 +639,17 @@
     "vscode_command": "editor.action.rename",
     "jetbrains_command": "RenameElement",
     "jetbrains_key": "shift f6"
+  },
+  {
+    "vscode_key": "f1",
+    "vscode_command": "workbench.action.showCommands",
+    "jetbrains_command": "GotoAction",
+    "jetbrains_key": "shift ctrl a"
+  },
+  {
+    "vscode_key": "f1",
+    "vscode_command": "workbench.action.showCommands",
+    "jetbrains_command": "GotoAction",
+    "jetbrains_key": "f1"
   }
 ]
