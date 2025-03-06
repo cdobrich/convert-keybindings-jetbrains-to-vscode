@@ -32,6 +32,7 @@ __pycache__/
 *$py.class
 
 # Editor files
+*.kate-swp*
 *.swp
 *.un~
 *.txt~
