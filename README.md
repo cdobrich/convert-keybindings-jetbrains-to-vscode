@@ -1,10 +1,10 @@
 # Convert keybinding from JetBrains Products to VSCode
 
-Convert keybindings from JetBrains products (PyCharm, Webstorm, RustRover, etc.) to VSCode.
+Convert keybindings from JetBrains products (PyCharm, Webstorm, RustRover, etc.) to VSCode. This also works for community forks of VSCode, such as VSCodium.
 
 # How to Use
 
-The _command_translation_dictionary_ is a set of translation data in JSON format. It is provided with this program, mapping what the developer has determined translates between the two program environments. This is the first argument passed to the program. (This file can also be substituted by users.)
+The _command_translation_dictionary.json_ is a set of translation data in JSON format. It is provided with this program, mapping what the developer has determined translates between the two program environments (JetBrains and VSCode). This is the first argument passed to the program.
 
 Users may supply their own _Jetbrain's XML_ file. This is provided by using the '-x' or '--xml' command line switch.
 
