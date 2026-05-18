@@ -1,6 +1,6 @@
 # Convert keybinding from JetBrains Products to VSCode
 
-Convert keybindings from JetBrains products (PyCharm, Webstorm, RustRover, etc.) to VSCode. This also works for community forks of VSCode, such as VSCodium.
+Convert keybindings from JetBrains products (PyCharm, Webstorm, RustRover, etc.) to VSCode. This also works for community forks of VSCode, such as VSCodium (with adjusted folder paths).
 
 # How to Use
 
@@ -50,19 +50,39 @@ Syntax: ```~/.var/app/com.jetbrains.PyCharm-Community/config/JetBrains/<product>
 
 Copy the output file (default filename is keybindings.json) to the user configured key map storage Locations. See below for operation system specific locations.
 
-## MacOS
+## VSCodium
 
-    ~/Library/Application\ Support/Code/User/keybindings.json
+### Linux (Standard, non-Flatpak)
 
-## Linux
+    ~/.config/VSCodium/User/keybindings.json
+
+There is a shellscript `install-keybindings-to-vscode-on-linux.sh` which will copy the default output `keybindings.json` to the default VSCode installation location on Linux. Close VSCode before running this shellscript.
+
+### Linux (Flatpak Installation)
+
+If you installed VSCodium as a Flatpak, the path is sandboxed:
+
+    ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
+
+## VSCode
+
+### Linux (Standard, non-Flatpak)
 
     ~/.config/Code/User/keybindings.json
 
 There is a shellscript `install-keybindings-to-vscode-on-linux.sh` which will copy the default output `keybindings.json` to the default VSCode installation location on Linux. Close VSCode before running this shellscript.
 
-## Windows
+### Linux (Flatpak Installation)
 
-    %APPDATA%\Code\User\keybindings.json
+TBD
+
+### MacOS
+
+    ~/Library/Application Support/VSCodium/User/keybindings.json
+
+### Windows
+
+    %APPDATA%\VSCodium\User\keybindings.json
 
 # Limitations
 
