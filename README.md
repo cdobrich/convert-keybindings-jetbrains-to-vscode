@@ -45,10 +45,27 @@ Syntax: ```~/.var/app/com.jetbrains.PyCharm-Community/config/JetBrains/<product>
 
     ~/.var/app/com.jetbrains.PyCharm-Community/config/JetBrains/PyCharmCE2023.1/keymaps/SomeKeybingingName.xml
 
+### Troubleshooting: Keybindings Not Applying (Linux / Flatpak)
+
+If you are using Linux—especially if VSCodium/VSCode is installed via **Flatpak**—you might notice that your converted keybindings (such as custom overrides like `Ctrl+R`) do not take effect, and the application continues to use its default global shortcuts.
+
+This happens because sandboxed installations isolate their configuration files, causing them to ignore direct edits made to the host system's default generic paths (e.g., `~/.config/`).
+
+To force the application to register your custom configuration, follow these steps to paste the file contents directly through the application GUI:
+
+1. **Open VSCodium / VSCode**.
+2. **Open the Command Palette**: Press `F1` (or `Ctrl+Shift+P`).
+3. **Locate the Configuration File**: Type `Preferences: Open Keyboard Shortcuts (JSON)` and press `Enter`. 
+   > **Note:** This forces the editor to open the exact `keybindings.json` file it is actively reading inside its sandbox environment.
+4. **Apply Your Custom Keybindings**: 
+   * Select all existing text in the window that opens and delete it.
+   * Copy the entire contents of your newly generated `keybindings.json` file.
+   * Paste it directly into the editor tab.
+5. **Save and Apply**: Save the file (`Ctrl+S`). The new mappings will apply immediately without needing a full application restart.
 
 # Installing the Generated File
 
-Copy the output file (default filename is keybindings.json) to the user configured key map storage Locations. See below for operation system specific locations.
+Copy the output file (default filename is `keybindings.json`) to the user configured key map storage Locations. See below for operation system specific locations.
 
 ## VSCodium
 
